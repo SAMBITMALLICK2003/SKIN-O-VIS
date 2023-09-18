@@ -47,14 +47,14 @@ We are committed to safeguarding users' sensitive health data and ensuring compl
 </div>
 
 <div style="display: flex; flex-direction: row; align-items: center;">
-    <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
-    <!-- Right column content (image) -->
-    <img src="src/static/img/banner/report.jpeg" alt="Image" width=100%>
-  </div>
   <div style="flex: 2 0 66.33%;">
     <!-- Left column content -->
     <h3>📊 Report Generation and EMAIL:</h3>
     <p style="text-align: justify;">Report generation and email integration are indispensable elements of our skin cancer detection system. Report generation compiles detailed assessments, aiding healthcare professionals in treatment planning, patient records, and clear communication. Meanwhile, email integration enhances user engagement by providing timely notifications, convenient access to assessment results, and facilitating remote consultations. Together, these features promote early diagnosis, personalized treatment recommendations, and improved patient outcomes, ensuring a comprehensive and user-centric approach to skin health management.</p>
+  </div>
+  <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
+    <!-- Right column content (image) -->
+    <img src="src/static/img/banner/report.jpeg" alt="Image" width=100%>
   </div>
 </div>
 
@@ -71,14 +71,14 @@ We are committed to safeguarding users' sensitive health data and ensuring compl
 </div>
 
 <div style="display: flex; flex-direction: row; align-items: center;">
-    <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
-    <!-- Right column content (image) -->
-    <img src="src/static/img/banner/lang.jpeg" alt="Image" width=100%>
-  </div>
   <div style="flex: 2 0 66.33%;">
     <!-- Left column content -->
     <h3>🌍 Multi Language Support:</h3>
     <p style="text-align: justify;">Multi-language support is crucial in our skin cancer detection system for several key reasons. It ensures inclusivity, breaks language barriers, and promotes accessibility for users of diverse linguistic backgrounds. Additionally, it enhances global reach, contributing to widespread early skin cancer detection. Most importantly, multi-language support empowers users to access vital skin health information, make informed decisions, and seek timely medical attention, ultimately improving public health outcomes worldwide.</p>
+  </div>
+  <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
+    <!-- Right column content (image) -->
+    <img src="src/static/img/banner/lang.jpeg" alt="Image" width=100%>
   </div>
 </div>
 
