@@ -1,0 +1,373 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skin-O-Vis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='ss/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gijgo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div>
+                        <div class="main-menu1">
+                            <nav>
+                                <ul id="lang">
+                                    <li><a href="{{ url_for('model') }}">English</a></li>
+                                    <li><a href="{{ url_for('model_hindi') }}">हिंदी</a></li>
+                                    <li><a href="{{ url_for('model_bengali') }}">বাংলা</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{{ url_for('index') }}">
+                                    <img  class="img1" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="{{ url_for('index') }}">Home</a></li>
+                                                <li><a href="{{ url_for('model') }}">Model</a></li>
+                                                <li><a href="{{ url_for('model') }}">Diseases<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                       <li><a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">Actinic keratosis</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">Basal Cell Carcinoma</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">Benign keratosis</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">Dermatofibroma</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">Melanocytic nevi</a></li>
+                                                        <li><a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">Vascular lesions</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">Melanoma</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{{ url_for('about') }}">About us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Model Details</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area" style="text-align: justify;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="welcome_docmed_info">
+                        <h3>Diving into the
+                            <span>Dataset.</span></h3>
+                        <p style="text-align: justify;">We have harnessed the HAM10000 dataset as a cornerstone in our dermatological research and diagnostic endeavors. By employing advanced machine learning algorithms and image analysis techniques, we have leveraged this extensive collection of dermatoscopic images to develop cutting-edge tools for the early detection and classification of common pigmented skin lesions.</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> The dataset comprises a total of 10,015 high-resolution images. </li>
+                            <li> <i class="flaticon-verified"></i> Includes a wide variety of common pigmented skin lesions. </li>
+                            <li> <i class="flaticon-verified"></i> Expert annotations for accurate lesion classification.</li>
+                        </ul>
+                        <p>Dataset Link: </p>
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T" style="color: white;">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T</a>
+                        <div style="height: 15px;"></div>
+                        <p style="text-align: justify;">We incorporated an extension of the HAM dataset to achieve class balancing, which allows us to provide more equitable and accurate dermatological assessments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area" style="padding-top:0px; text-align: justify;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{{ url_for('static', filename='img/banner/cnn.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>Custom trained
+                            <span>CNN.</span></h3>
+                        <p style="text-align: justify;">We have harnessed Convolutional Neural Networks (CNNs) extensively for image classification tasks, leveraging the pixel intensity as fundamental features. This strategic approach has allowed us to effectively classify and categorize diverse visual data by learning intricate patterns and relationships within the pixel values.</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> It has achieved an impressive accuracy rate of 90.25%. </li>
+                            <li> <i class="flaticon-verified"></i> The model performs well with a test loss of 0.258. </li>
+                        </ul>
+                        <p style="text-align: justify;">By utilizing CNNs and optimizing our approach, we've not only improved accuracy but also strengthened the model's ability to handle diverse image classification challenges, thus enhancing the reliability and efficiency of visual data analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area" style="padding-top:0px; text-align: justify;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>Custom Trained
+                            <span>YOLOv8.</span></h3>
+                        <p style="text-align: justify;">We have integrated the YOLOv8 classification model, a deep learning architecture based on the PyTorch framework, for skin disease identification on our website. This choice is driven by the model's exceptional accuracy in classifying dermatological images, making it well-suited for identifying complex patterns associated with skin diseases.</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> The model achieves top-1 accuracy of 80.65%. </li>
+                            <li> <i class="flaticon-verified"></i> Our model exhibits a top-5 accuracy rate of 97.2%. </li>
+                        </ul>
+                        <p style="text-align: justify;">By employing the YOLOv8 classification model on our website, we ensure robust skin disease identification with both top-1 and top-5 accuracy metrics, ultimately improving the accuracy and reliability of our diagnostic services.</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{{ url_for('static', filename='img/banner/yolo.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome_clicnic_area" style="padding-top: 0px; text-align: justify;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="welcome_docmed_info">
+                        <h3>Combining Predictions for
+                            <span>Enhanced Accuracy.</span></h3>
+                        <p style="text-align: justify;">We've employed majority voting and ensemble techniques to bolster the accuracy and reliability of our predictions. These methods harness the collective intelligence of multiple models, minimizing the influence of individual errors and enhancing the robustness of our system. By aggregating diverse model perspectives, we can tackle complex decision-making scenarios with greater confidence. This approach not only mitigates model bias and variance but also ensures that users receive more precise and consistent results, ultimately improving their overall experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p style="color: #FF6969; font-size: 12px;">Disclaimer: This website provides information for educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Consult with a qualified healthcare provider for any medical concerns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12 justify-content-center">
+                        <p class="copy_right text-center">
+                            <p style="color: white;">Committed to your wellbeing, with ❤️ Team Elixir</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <form id="test-form" class="white-popup-block mfp-hide">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <h3>
+                    Book an 
+                <span>Appointment</span>
+                </h3>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <select class="form-select wide" id="default-select" class="">
+                                <option data-display="Please select doctor to visit">Please select doctor to visit </option>
+                                <option value="1">Anaf</option>
+                                <option value="2">Nayna Therapy</option>
+                                <option value="3">Nadif</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-9">
+                            <input type="text"  placeholder="Your name ">
+                        </div>
+                        <div class="col-xl-3">
+                            <input type="text"  placeholder="Your age">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="text"  placeholder="Phone number ">
+                        </div>
+                        <div class="col-xl-6">
+                            <input type="email"  placeholder="Email Address">
+                        </div>
+                        <div class="col-xl-6">
+                            <input class="datepicker" placeholder="Appointment Date">
+                        </div>
+                        <div class="col-xl-6">
+                            <input class="timepicker" placeholder="Suitable time">
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed-btn3">Make an Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+    <script>
+        function getAnswer() {
+            const questionInput = document.getElementById("question-input").value;
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Replace this with actual code to fetch the answer from your language model.
+            // For simplicity, we'll just echo back the question as the answer in this example.
+            answerOutput.innerHTML = "Answer: " + questionInput;
+
+            // Hide the "Get Answer" button and show the "Regenerate" button
+            getAnswerButton.style.display = "none";
+            regenerateButton.style.display = "inline";
+        }
+
+        function regenerateQuestion() {
+            const questionInput = document.getElementById("question-input");
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Clear the input field and answer output
+            questionInput.value = "";
+            answerOutput.innerHTML = "";
+
+            // Hide the "Regenerate" button and show the "Get Answer" button
+            regenerateButton.style.display = "none";
+            getAnswerButton.style.display = "inline";
+        }
+    </script>
+
+
+
+
+    <script src="{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{ url_for('static', filename='s/isotope.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/ajax-form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/scrollIt.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/nice-select.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+    <!--contact js-->
+    <script src="{ url_for('static', filename='js/contact.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/mail-script.js') }}"></script>
+    <script src="{ url_for('static', filename='js/main.js') }}"></script>
+
+    <script>
+    // JavaScript function to capture the selected choice and submit the form
+    function captureChoice() {
+        var selectedChoice = document.getElementById("choices").value;
+        document.getElementById("selected_choice").value = selectedChoice;
+        document.getElementById("upload-file").submit();
+    }
+    </script>
+
+
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display = "none"})
+    </script>
+</body>
+
+</html>
