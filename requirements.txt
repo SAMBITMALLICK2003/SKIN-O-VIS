@@ -1,0 +1,12 @@
+fastai==1.0.57
+Flask==2.3.3
+keras==2.14.0
+opencv_python==4.8.0.76
+pandas==2.1.0
+Pillow==10.0.0
+replicate==0.12.0
+reportlab==4.0.4
+Requests==2.31.0
+tensorflow==2.13.0
+tensorflow_intel==2.13.0
+ultralytics==8.0.180
