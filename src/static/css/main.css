@@ -1,0 +1,288 @@
+/* Define a CSS class for the styled table */
+/* Define a CSS class for the styled table */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hd {
+    color: #64CCC5;
+    font-size: 25px;
+}
+
+
+
+.download-button {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.download-button:hover {
+     background-color: #0056b3;
+     color: #fff;
+}
+
+.container-preloader {
+	align-items:center; cursor:none; display:flex; height:100%;
+  justify-content:center; position:fixed; left:0; top:0; width:100%; z-index:900;
+}
+.container-preloader .animation-preloader {
+	position:absolute; z-index: 100;}
+/* Spinner Loading */
+.container-preloader .animation-preloader .spinner {
+  animation: spinner 1s infinite linear;
+	border-radius: 50%;  border: 10px solid rgba(0, 0, 0, 0.2);
+  border-top-color: green; /* It is not in alphabetical order so that you do not overwrite it */
+  height: 9em;  margin: 0 auto 3.5em auto; width: 9em;
+}
+/* Loading text */
+.container-preloader .animation-preloader .txt-loading {
+  font: bold 5em 'Montserrat', sans-serif;
+	text-align: center;	user-select: none;
+}
+.container-preloader .animation-preloader .txt-loading .characters:before {
+  animation: characters 4s infinite;  color: orange;
+  content: attr(preloader-text);  left: 0;
+  opacity: 0;  position: absolute;  top: 0;
+  transform: rotateY(-90deg);
+}
+.container-preloader .animation-preloader .txt-loading .characters {
+	color: rgba(0, 0, 0, 0.2);	position: relative;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(2):before {
+  animation-delay: 0.2s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(3):before {
+  animation-delay: 0.4s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(4):before {
+  animation-delay: 0.6s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(5):before {
+  animation-delay: 0.8s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(6):before {
+  animation-delay: 1s;
+}
+.container-preloader .animation-preloader .txt-loading .characters:nth-child(7):before {
+  animation-delay: 1.2s;
+}
+.container-preloader .loader-section {
+  background-color: #ffffff;  height: 100%;
+  position: fixed;  top: 0;  width: calc(50% + 1px);
+}
+.container-preloader .loader-section.section-left {
+  left: 0;
+}
+.container-preloader .loader-section.section-right {
+  right: 0;
+}
+/* Fade effect on loading animation */
+.loaded .animation-preloader {
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+/* Curtain effect */
+.loaded .loader-section.section-left {
+  transform: translateX(-101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+.loaded .loader-section.section-right {
+  transform: translateX(101%);
+  transition: 0.7s 0.3s all cubic-bezier(0.1, 0.1, 0.1, 1.000);
+}
+/* Animation of the preloader */
+@keyframes spinner {
+to {
+	transform: rotateZ(360deg);
+}}
+/* Animation of letters loading from the preloader */
+@keyframes characters {
+  0%,
+  75%,
+  100% {
+ opacity: 0;
+ transform: rotateY(-90deg);
+  }
+  25%,
+  50% {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }}
+/* Laptop size back (laptop, tablet, cell phone) */
+@media screen and (max-width: 767px) {
+	/* Preloader */
+	/* Spinner Loading */
+	.container-preloader .animation-preloader .spinner {
+	height: 8em;
+	width: 8em;
+	}
+	/* Text Loading */
+	.container-preloader .animation-preloader .txt-loading {
+	  font: bold 3.5em 'Montserrat', sans-serif;
+	}}
+@media screen and (max-width: 500px) {
+	/* Prelaoder */
+	/* Spinner Loading */
+	.container-preloader .animation-preloader .spinner {
+	height: 7em;
+	width: 7em;
+	}
+	/*Loading text */
+	.container-preloader .animation-preloader .txt-loading {
+	  font: bold 2em 'Montserrat', sans-serif;
+	}}
+.origin{text-decoration:none;
+font-size:45px;}
+
+.back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        /* Add a hover effect */
+.back-to-top:hover {
+            background-color: #0056b3;
+        }
+
+/* Style the figure container */
+.figure {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Style the image within the figure */
+.figure-img {
+    max-width: 100%;
+    max-height: 400px; /* Set a maximum height if needed */
+    border: 2px solid #ddd; /* Add a border */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+
+
+.prediction-text {
+    font-size: 30px;
+    font-family: 'Ubuntu', serif;
+    color: white;
+    margin-top: 50px;
+}
+
+
+.prediction-text1 {
+    font-size: 40px;
+    font-family: 'Ubuntu', serif;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+                    /* Add styles for the prediction probabilities title */
+.prediction-probabilities-title {
+   font-size: 30px;
+   font-weight: bold;
+   margin-top: 60px;
+   margin-bottom: 40px;
+   color: #64CCC5;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-family: 'Merriweather', serif;
+    background-color: rgba(140, 171, 255, 0.5); /* Background color for the entire table */
+}
+
+#head {
+    background-color: #213363;
+    color: white;
+}
+
+
+/* Style the table header (thead) */
+.styled-table thead {
+    background-color: #213363; !important /* Background color for the header */
+    color: white; /* Text color for the header */
+}
+
+/* Style table header cells (th) */
+.styled-table th {
+    padding: 15px; /* Increase header cell padding for better visibility */
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    background-color: #213363;
+    color: white;
+}
+
+/* Style table data cells (td) */
+.styled-table td {
+    text-align: centre;
+    padding: 15px; /* Increase data cell padding for better visibility */
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+
+/* Add a hover effect on table rows */
+.styled-table tbody tr:hover {
+    background-color: #0079FF;
+}
+
+/* Increase row height */
+.styled-table tbody tr {
+    height: 40px; /* Adjust the row height as needed */
+}
+
+
+
+
+.form-control {
+    width: 100%;
+}
+
+.custom-file-input {
+    width: 50%;
+}
+
+.custom-file-label {
+    width: 50%;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.comment{
+margin-top:20px;
+}
+
+.img-thumbnail {
+    width: 350px;
+    height: 300px;
+}
+
+.table {
+width:50%;
+}
