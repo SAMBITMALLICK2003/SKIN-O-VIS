@@ -1,0 +1,326 @@
+﻿<!doctype html>
+<html class="no-js" lang="hi">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skin-O-Vis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='ss/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gijgo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div>
+                        <div class="main-menu1">
+                            <nav>
+                                <ul id="lang">
+                                    <li><a href="{{ url_for('model') }}">English</a></li>
+                                    <li><a href="{{ url_for('model_hindi') }}">हिंदी</a></li>
+                                    <li><a href="{{ url_for('model_bengali') }}">বাংলা</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{{ url_for('index_hindi') }}">
+                                    <img  class="img1" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="{{ url_for('index_hindi') }}">होम</a></li>
+                                                <li><a href="{{ url_for('model_hindi') }}">मॉडल</a></li>
+                                                <li><a href="{{ url_for('model_hindi') }}">बीमारी<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                       <li><a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">एक्टिनिक केराटोसिस</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">बेसल सेल कार्सिनोमा</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">बेनैं केरेटोसिस</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">डर्माटोफाइब्रोमा</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">मेलानोसाइटिक नेवी</a></li>
+                                                        <li><a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">वेस्क्युलर घाव</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">मेलेनोमा</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{{ url_for('about_hindi') }}">हमारे बारे में</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>मॉडल विवरण</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="welcome_docmed_info">
+                        <h3>
+                            <span>डेटासेट.</span></h3>
+                        <p style="text-align: justify;">हमने अपने त्वचाविज्ञान अनुसंधान और नैदानिक प्रयासों में आधारशिला के रूप में HAM10000 डेटासेट का उपयोग किया है|उन्नत मशीन लर्निंग एल्गोरिदम और छवि विश्लेषण तकनीकों को नियोजित करके, हमने सामान्य रंगद्रव्य त्वचा घावों के प्रारंभिक पता लगाने और वर्गीकरण के लिए अत्याधुनिक उपकरण विकसित करने के लिए डर्माटोस्कोपिक छवियों के इस व्यापक संग्रह का लाभ उठाया है।</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> डेटासेट में कुल १०,०१५ उच्च-रिज़ॉल्यूशन छवियां शामिल हैं। </li>
+                            <li> <i class="flaticon-verified"></i> इसमें विभिन्न प्रकार के सामान्य रंजित त्वचा घाव शामिल हैं। </li>
+                            <li> <i class="flaticon-verified"></i> घावों के सटीक वर्गीकरण के लिए विशेषज्ञ एनोटेशन ।</li>
+                        </ul>
+                        <p>डेटासेट लिंक: </p>
+                        <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T" style="color: white;">https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T</a>
+                        <div style="height: 15px;"></div>
+                        <p style="text-align: justify;">हमने वर्ग संतुलन हासिल करने के लिए एचएएम डेटासेट का एक विस्तार शामिल किया, जो हमें अधिक न्यायसंगत और सटीक त्वचाविज्ञान मूल्यांकन प्रदान करने की अनुमति देता है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area" style="padding-top:0px">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{{ url_for('static', filename='img/banner/cnn.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>कस्टम प्रशिक्षित
+                            <span>सीएनएन.</span></h3>
+                        <p style="text-align: justify;">हमने छवि वर्गीकरण कार्यों के लिए कन्वेन्शनल न्यूरल नेटवर्क्स (सीएनएन) का व्यापक रूप से उपयोग किया है, पिक्सेल तीव्रता को मूलभूत सुविधाओं के रूप में उपयोग किया है। इस रणनीतिक दृष्टिकोण ने हमें पिक्सेल मूल्यों के भीतर जटिल पैटर्न और संबंधों को सीखकर विविध दृश्य डेटा को प्रभावी ढंग से वर्गीकृत और श्रेणीबद्ध  करने की अनुमति दी है।</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> इसने ९०.२५% की प्रभावशाली सटीकता दर हासिल की है।</li>
+                            <li> <i class="flaticon-verified"></i> मॉडल ०.२५८ की परीक्षण हानि के साथ अच्छा प्रदर्शन करता है। </li>
+                        </ul>
+                        <p style="text-align: justify;">सीएनएन का उपयोग करके और अपने दृष्टिकोण को अनुकूलित करके, हमने न केवल सटीकता में सुधार किया है, बल्कि विविध छवि वर्गीकरण चुनौतियों को संभालने के लिए मॉडल की क्षमता को भी मजबूत किया है, जिससे दृश्य डेटा विश्लेषण की विश्वसनीयता और दक्षता में वृद्धि हुई है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area" style="padding-top:0px">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>कस्टम प्रशिक्षित
+                            <span>YOLOv8.</span></h3>
+                        <p style="text-align: justify;">हमने अपनी वेबसाइट पर त्वचा रोग की पहचान के लिए YOLOv8 वर्गीकरण मॉडल, PyTorch ढांचे पर आधारित एक गहन शिक्षण वास्तुकला को एकीकृत किया है। यह विकल्प त्वचा संबंधी छवियों को वर्गीकृत करने में मॉडल की असाधारण सटीकता से प्रेरित है, जो इसे त्वचा रोगों से जुड़े जटिल पैटर्न की पहचान करने के लिए उपयुक्त बनाता है।</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i>मॉडल ८०.६५% की टॉप-१ सटीकता प्राप्त करता है।</li>
+                            <li> <i class="flaticon-verified"></i>हमारा मॉडल ९७.२% की शीर्ष-५ सटीकता दर प्रदर्शित करता है।</li>
+                        </ul>
+                        <p style="text-align: justify;">अपनी वेबसाइट पर YOLOv8 वर्गीकरण मॉडल को नियोजित करके, हम शीर्ष-१ और शीर् -५ सटीकता मेट्रिक्स दोनों के साथ मजबूत त्वचा रोग की पहचान सुनिश्चित करते हैं, अंततः हमारी नैदानिक ​​​​सेवाओं की सटीकता और विश्वसनीयता में सुधार करते हैं।</p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{{ url_for('static', filename='img/banner/yolo.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="welcome_clicnic_area" style="padding-top: 0px">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="welcome_docmed_info">
+                        <h3>उन्नत सटीकता के लिए
+                            <span>भविष्यवाणियों का संयोजन.</span></h3>
+                        <p style="text-align: justify;">हम अपनी भविष्यवाणियों की सटीकता और विश्वसनीयता बढ़ाने के लिए बहुसंख्यक वोटिंग और एसेम्बल तकनीकों का उपयोग करते हैं। ये विधियां कई मॉडलों की सामूहिक बुद्धिमत्ता का फायदा उठाती हैं, व्यक्तिगत त्रुटियों के प्रभाव को कम करती हैं और हमारे सिस्टम की मजबूती को बढ़ाती हैं। विभिन्न मॉडलों के दृष्टिकोणों को मिलाकर, हम अधिक आत्मविश्वास के साथ जटिल निर्णय लेने की स्थितियों को संभाल सकता है। निपट सकता है। यह दृष्टिकोण न केवल मॉडल पूर्वाग्रह और भिन्नता को कम करता है बल्कि उपयोगकर्ताओं को अधिक सटीक और सुसंगत होने की भी अनुमति देता है।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p style="color: #FF6969; font-size: 12px;">अस्वीकरण: यह वेबसाइट केवल शिक्षा. और सूचनात्मक उद्देश्यों के लिए जानकारी प्रदान करती है|यह पेशेवर चिकित्सा सलाह, निदान या उपचार का विकल्प नहीं है।किसी भी चिकित्सीय चिंता के लिए योग्य स्वास्थ्य सेवा प्रदाता से परामर्श लें।</p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12 justify-content-center">
+                        <p class="copy_right text-center">
+                            <p style="color: white;">अपने कल्याण के प्रति प्रतिबद्ध रहें,❤️ Team Elixir</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script>
+        function getAnswer() {
+            const questionInput = document.getElementById("question-input").value;
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Replace this with actual code to fetch the answer from your language model.
+            // For simplicity, we'll just echo back the question as the answer in this example.
+            answerOutput.innerHTML = "Answer: " + questionInput;
+
+            // Hide the "Get Answer" button and show the "Regenerate" button
+            getAnswerButton.style.display = "none";
+            regenerateButton.style.display = "inline";
+        }
+
+        function regenerateQuestion() {
+            const questionInput = document.getElementById("question-input");
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Clear the input field and answer output
+            questionInput.value = "";
+            answerOutput.innerHTML = "";
+
+            // Hide the "Regenerate" button and show the "Get Answer" button
+            regenerateButton.style.display = "none";
+            getAnswerButton.style.display = "inline";
+        }
+    </script>
+
+
+
+
+    <script src="{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{ url_for('static', filename='s/isotope.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/ajax-form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/scrollIt.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/nice-select.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+    <!--contact js-->
+    <script src="{ url_for('static', filename='js/contact.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/mail-script.js') }}"></script>
+    <script src="{ url_for('static', filename='js/main.js') }}"></script>
+
+    <script>
+    // JavaScript function to capture the selected choice and submit the form
+    function captureChoice() {
+        var selectedChoice = document.getElementById("choices").value;
+        document.getElementById("selected_choice").value = selectedChoice;
+        document.getElementById("upload-file").submit();
+    }
+    </script>
+
+
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display = "none"})
+    </script>
+</body>
+
+</html>

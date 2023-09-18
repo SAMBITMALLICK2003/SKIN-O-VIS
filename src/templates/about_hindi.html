@@ -1,0 +1,329 @@
+﻿<!doctype html>
+<html class="no-js" lang="hi">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skin-O-Vis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='ss/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gijgo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div>
+                        <div class="main-menu1">
+                            <nav>
+                                <ul id="lang">
+                                    <li><a href="{{ url_for('about') }}">English</a></li>
+                                    <li><a href="{{ url_for('about_hindi') }}">हिंदी</a></li>
+                                    <li><a href="{{ url_for('about_bengali') }}">বাংলা</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{{ url_for('index_hindi') }}">
+                                    <img  class="img1" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="{{ url_for('index_hindi') }}">होम</a></li>
+                                                <li><a href="{{ url_for('model_hindi') }}">मॉडल</a></li>
+                                                <li><a href="{{ url_for('about_hindi') }}">बीमारी<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">एक्टिनिक केराटोसिस</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">बेसल सेल कार्सिनोमा</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">बेनैं केरेटोसिस</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">डर्माटोफाइब्रोमा</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">मेलानोसाइटिक नेवी</a></li>
+                                                        <li><a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">वेस्क्युलर घाव</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">मेलेनोमा</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{{ url_for('about_hindi') }}">हमारे बारे में</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>हमारे बारे में</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="llm2"></div>
+    <div class="quality_area">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-justify">
+                        <h3>हमारा लक्ष्य</h3>
+                        <p>हमने यह वेबसाइट बनाकर कृत्रिम बुद्धिमत्ता  की मदद से अलग त्वचाबीमारी का निदान करने का प्रयास किया है। हमारे देश में, जहां कुछ सीमांत के इलाकों में अच्छे त्वचाबीमारी विशेषज्ञों की कमी के कारण कई बीमारियों का निदान नहीं हो पाता है, हमारी उपयोग में आसान वेबसाइट कृत्रिम बुद्धिमत्ता की मदद से अलग त्वचाबीमारी का निदान कर सकती है। त्वचाबीमारी की यह विधि काफी लाभदायक है।हमारे जैसे देश में इस वेबसाइट का उपयोग चिकित्सा क्षेत्र में क्रांति लाने में सक्षम है, खासकर सीमांत के इलाकों में।आइए बीमारीमुक्त और स्वस्थ समाज के निर्माण के लिए मिलकर आगे बढ़ें।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="welcome_clicnic_area" style="text-align: justify; padding-top: 0px;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="welcome_docmed_info">
+                        <h3>
+                            <span>भविष्य का दायरा</span></h3>
+                        <p style="text-align: justify;">भारत में भविष्य में सुधारों का महत्व इसके विविध और तेजी से विकसित हो रहे परिदृश्य में निहित है, जो एक अरब से अधिक आबादी द्वारा संचालित है, जिससे जटिल चुनौतियों का समाधान करने के लिए प्रौद्योगिकी को अपनाने की आवश्यकता होती है। जैसे-जैसे भारत स्वास्थ्य सेवा और अनुसंधान में आगे बढ़ रहा है, हमारी परियोजना निम्नलिखित में योगदान दे सकती है:</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> क्षेत्र-विशिष्ट विभाजन| </li>
+                            <li> <i class="flaticon-verified"></i> मजबूत मॉडल विकास के लिए व्यापक डेटासेट का लाभ उठाना। </li>
+                            <li> <i class="flaticon-verified"></i> विविध परिदृश्यों को कवर करने के लिए मॉडलों की एक विस्तृत श्रृंखला को एकीकृत करना।</li>
+                            <li> <i class="flaticon-verified"></i> अनुकूलनशीलता और प्रदर्शन के लिए कस्टम संयोजन तकनीकें।</li>
+                        </ul>
+                        <div style="height: 15px;"></div>
+                        <p style="text-align: justify;">अंत में, भारत में भविष्य में सुधार की अनिवार्यता, इसके विविध और तेजी से विकसित हो रहे परिदृश्य से प्रेरित होकर, हमारी परियोजना के महत्व को रेखांकित करती है। क्षेत्र विभाजन, बड़े डेटा प्रशिक्षण, मॉडल एकीकरण और कस्टम संयोजन तकनीकों पर ध्यान केंद्रित करके, हम समाधानों के वितरण में स्केलेबिलिटी, दक्षता और समावेशिता सुनिश्चित करते हुए प्रमुख क्षेत्रों में देश की प्रगति में सक्रिय रूप से योगदान कर सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="expert_doctors_area p-0" id="team">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-center">
+                        <h3>हमारी टीम</h3>
+                        <p>हम अपने लक्ष्यों को प्राप्त करने के लिए प्रतिबद्ध हैं</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/Sambit.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>सम्बित  <br>मल्लिक</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/Snigdha.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3> स्निग्धा  <br>पाल</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/Arpita.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>अर्पिता  <br>मोंडल</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/chitra.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>चित्रदीप <br> साहा</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/sayan.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>सयनदीप <br> मल्लिक</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_expert">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/shayam.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>श्यामसुंदर  राजबंशी</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="llm2"></div>
+    <div class="expert_doctors_area p-0">
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-lg-6">
+                    <div class="section_title mb-55 text-center">
+                        <h3>हमारे गुरु</h3>
+                        <p>हमारी प्रेरणा के पीछे के चेहरे</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_expert" style="padding: 60px">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/AS.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>अनिंद्य सेन</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="single_expert" style="padding: 60px">
+                        <div class="expert_thumb">
+                            <img src="{{ url_for('static', filename='img/experts/SSB.png') }}" alt="">
+                        </div>
+                        <div class="experts_name text-center">
+                            <h3>शिबसंकर भौमिक</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p style="color: #FF6969; font-size: 12px;">अस्वीकरण: यह वेबसाइट केवल शिक्षा. और सूचनात्मक उद्देश्यों के लिए जानकारी प्रदान करती है|यह पेशेवर चिकित्सा सलाह, निदान या उपचार का विकल्प नहीं है।किसी भी चिकित्सीय चिंता के लिए योग्य स्वास्थ्य सेवा प्रदाता से परामर्श लें।</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12 justify-content-center">
+                        <p class="copy_right text-center">
+                            <p style="color: white;">अपने कल्याण के प्रति प्रतिबद्ध रहें,❤️ Team Elixir</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{ url_for('static', filename='s/isotope.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/ajax-form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/scrollIt.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/nice-select.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/main.js') }}"></script>
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display = "none"})
+    </script>
+</body>
+</body>
+
+</html>
