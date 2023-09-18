@@ -1,6 +1,6 @@
 
 <div style="text-align: center;">
-  <img src="../src/static/img/logo.png" alt="Our Solution" style="max-width: 100%; border-radius: 10px;">
+  <img src="src/static/img/logo.png" alt="Our Solution" style="max-width: 100%; border-radius: 10px;">
 </div>
 
 
@@ -11,7 +11,7 @@
 
 # Our Solution
 
-<img src="../src/static/img/banner/main.jpeg" width=100% >
+<img src="src/static/img/banner/main.jpeg" width=100% >
 
 # Our Vision
 Our vision for this project is to bring about a paradigm shift in the landscape of skin cancer detection and prevention, making it accessible, accurate, and impactful for people from all walks of life. Skin cancer is a global health concern, and we are committed to leveraging technology to enhance early detection, improve patient outcomes, and contribute to public health on a broad scale.
@@ -42,14 +42,14 @@ We are committed to safeguarding users' sensitive health data and ensuring compl
   </div>
   <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
     <!-- Right column content (image) -->
-    <img src="../src/static/img/banner/multi_model.jpeg" alt="Image" width=100%>
+    <img src="src/static/img/banner/multi_model.jpeg" alt="Image" width=100%>
   </div>
 </div>
 
 <div style="display: flex; flex-direction: row; align-items: center;">
     <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
     <!-- Right column content (image) -->
-    <img src="../src/static/img/banner/report.jpeg" alt="Image" width=100%>
+    <img src="src/static/img/banner/report.jpeg" alt="Image" width=100%>
   </div>
   <div style="flex: 2 0 66.33%;">
     <!-- Left column content -->
@@ -66,14 +66,14 @@ We are committed to safeguarding users' sensitive health data and ensuring compl
   </div>
   <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
     <!-- Right column content (image) -->
-    <img src="../src/static/img/banner/llm.jpeg" alt="Image" width=100%>
+    <img src="src/static/img/banner/llm.jpeg" alt="Image" width=100%>
   </div>
 </div>
 
 <div style="display: flex; flex-direction: row; align-items: center;">
     <div style="flex: 1 0 33.66%; padding: 20px; padding-top: 50px;">
     <!-- Right column content (image) -->
-    <img src="../src/static/img/banner/lang.jpeg" alt="Image" width=100%>
+    <img src="src/static/img/banner/lang.jpeg" alt="Image" width=100%>
   </div>
   <div style="flex: 2 0 66.33%;">
     <!-- Left column content -->
