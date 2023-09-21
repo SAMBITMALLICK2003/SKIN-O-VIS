@@ -1,0 +1,290 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skin-O-Vis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='ss/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gijgo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+</head>
+
+<body>
+
+    <div id="preloader"></div>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{{ url_for('index') }}">
+                                    <img  class="img1" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="{{ url_for('index') }}">home</a></li>
+                                                 <li><a href="{{ url_for('model') }}">Model</a></li>
+                                                <li><a href="{{ url_for('result') }}">Disease <i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">Actinic keratosis</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">Basal Cell Carcinoma</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">Benign keratosis</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">Dermatofibroma</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">Melanocytic nevi</a></li>
+                                                        <li><a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">Vascular lesions</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">Melanoma</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{{ url_for('about') }}">About us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="book_room">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Predictive Insights</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="container1">
+            <div class="left-div">
+                <h2 class="hd">Patient Details</h2>
+                <p class="prediction-text"><strong>Name :  </strong> {{result.get("name")}}</p>
+                <p class="prediction-text">Age:  {{result.get("age")}}</p>
+                <p class="prediction-text">Phone:  {{result.get("phone")}}</p>
+                <p class="prediction-text">Email-ID:  {{result.get("email")}}</p>
+            </div>
+            <div class="right-divs">
+                <div class="right-div">
+                    <p class="prediction-text1">{{result.get("model")}}</p>
+                </div>
+                <div class="right-div">
+                    <p class="prediction-text1">{{result.get("class")}}</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="container1">
+     <div class="figure-container">
+        <figure class="figure">
+            <img src={{ url_for('static', filename='image.jpeg') }} class="figure-img img-thumbnail input-image">
+        </figure>
+    </div>
+    <div>
+        <p class="hd prediction-probabilities-title">Prediction Probabilities:</p>
+        <table class="styled-table">
+            <table class="styled-table">
+                  <tr id="head">
+                      <th>Class</th>
+                      <th>Probability</th>
+                  </tr>
+                  <tr>
+                      <td>Actinic Keratoses and Intraepithelial Carcinoma</td>
+                      <td>{{"%.2f" % (result.get("probs")[0] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Basal Cell Carcinoma</td>
+                      <td>{{"%.2f" % (result.get("probs")[1] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Benign Keratosis-like Lesions</td>
+                      <td>{{"%.2f" % (result.get("probs")[2] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Dermatofibroma</td>
+                      <td>{{"%.2f" % (result.get("probs")[3] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Melanocytic Nevi</td>
+                      <td>{{"%.2f" % (result.get("probs")[4] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Vascular Carcinoma</td>
+                      <td>{{"%.2f" % (result.get("probs")[5] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Melanoma</td>
+                      <td>{{"%.2f" % (result.get("probs")[6] * 100)}}%</td>
+                  </tr>
+                  <tr>
+                      <td>Normal Skin</td>
+                      <td>{{"%.2f" % (result.get("probs")[7] * 100)}}%</td>
+                  </tr>
+              </table>
+        </table>
+    </div>
+</div>
+
+
+
+            <div style="text-align: center; padding-top: 20px; padding-bottom: 40px; display: flex; flex-direction: column; align-items: center;">
+                <a href="{{ url_for('generate_pdf') }}" download="downloaded_file.pdf" class="download-button" id="gen-button">Generate Report and Email</a>
+                <div id="spinner" class="spinner"></div>
+            </div>
+
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    $('#gen-button').click(function() {
+                        // Show the spinner
+                        $('#gen-button').hide();
+                        $('#spinner').show();
+
+                        // Simulate a delay (replace this with your actual PDF generation code)
+                        setTimeout(function() {
+                            // Hide the spinner when the report is generated (replace with your logic)
+                            $('#spinner').hide();
+                        }, 4000); // Adjust the delay as needed
+                    });
+                });
+            </script>
+
+
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10" id="llm">
+                    <div class="section_title1 mb-55 text-center" id="Lama" style="padding-top: 50px;">
+                        <h3>Skin-O-Vis KnowledgeHub</h3>
+                        <br>
+                        <p style="font-style: bold; color:white;">LLAMA2: Elevating Healthcare with AI Conversations</p>
+                    </div>
+                    <div style="padding-top: 10px; padding-bottom: 10px;">
+                        <input type="text" id="prompt-input" class="form-control" placeholder="Ask your question...">
+                    </div>
+                    <div class="llm1"></div>
+                    <div>
+                        <button id="generate-button" class="btn btn-primary" onclick="generateText()">Generate Text</button>
+                    </div>
+                    <div id="response-output"></div>
+                    <div class="llm1"></div>
+                    <button id="regenerate-button" class="btn btn-secondary" style="display:none;" onclick="regenerateText()">Ask Next Question</button>
+                </div>
+            </div>
+        </div>
+        <div class="llm1"></div>
+        <div class="llm1"></div>
+        <div class="llm1"></div>
+        <div class="llm1"></div>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            function setLoadingState() {
+                $("#response-output").html("Generating Response...");
+                $("#generate-button").hide();
+                $("#regenerate-button").hide();
+            }
+
+            function generateText() {
+                setLoadingState();
+
+                const promptInput = $("#prompt-input").val();
+                $.ajax({
+                    type: "POST",
+                    url: "/get_response",
+                    data: { prompt_input: promptInput },
+                    success: function (data) {
+                        $("#response-output").html(data.response);
+                        $("#generate-button").hide();
+                        $("#regenerate-button").show();
+                    },
+                });
+            }
+
+            function regenerateText() {
+                setLoadingState();
+
+                $("#prompt-input").val(""); // Clear the input field
+                $("#response-output").empty(); // Clear the response output
+                $("#generate-button").show();
+                $("#regenerate-button").hide();
+            }
+        </script>
+        <script src="{ url_for('static', filename='js/jquery.form.js') }}"></script>
+
+    </div>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display = "none"})
+    </script>
+</body>
+
+</body>
+
+<div class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p style="color: #FF6969; font-size: 12px;">Disclaimer: This website provides information for educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Consult with a qualified healthcare provider for any medical concerns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12 justify-content-center">
+                        <p class="copy_right text-center">
+                            <p style="color: white;">Committed to your wellbeing, with ❤️ Team Elixir</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

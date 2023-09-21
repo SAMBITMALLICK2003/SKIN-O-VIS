@@ -1,0 +1,497 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Skin-O-Vis</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+
+
+
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='ss/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/themify-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/nice-select.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/flaticon.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/gijgo.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/slicknav.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container">
+                    <div>
+                        <div class="main-menu1">
+                            <nav>
+                                <ul id="lang">
+                                    <li><a href="{{ url_for('index') }}">English</a></li>
+                                    <li><a href="{{ url_for('index_hindi') }}">हिंदी</a></li>
+                                    <li><a href="{{ url_for('index_bengali') }}">বাংলা</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-3">
+                            <div class="logo-img">
+                                <a href="{{ url_for('index') }}">
+                                    <img  class="img1" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9">
+                            <div class="menu_wrap d-none d-lg-block">
+                                <div class="menu_wrap_inner d-flex align-items-center justify-content-end">
+                                    <div class="main-menu">
+                                        <nav>
+                                            <ul id="navigation">
+                                                <li><a href="{{ url_for('index') }}">Home</a></li>
+                                                <li><a href="{{ url_for('model') }}">Model</a></li>
+                                                <li><a href="{{ url_for('index') }}">Diseases<i class="ti-angle-down"></i></a>
+                                                    <ul class="submenu">
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">Actinic keratosis</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">Basal Cell Carcinoma</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">Benign keratosis</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">Dermatofibroma</a></li>
+                                                        <li><a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">Melanocytic nevi</a></li>
+                                                        <li><a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">Vascular lesions</a></li>
+                                                        <li><a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">Melanoma</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="{{ url_for('about') }}">About us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="book_room">
+                                        <div class="book_btn">
+                                            <a class="popup-with-form" href="#detection">Detect Image</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="slider_area">
+        <div class="slider_active owl-carousel">
+            <div class="single_slider  d-flex align-items-center slider_bg_1 overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="slider_text">
+                                <span>Where Trust Meets Detection</span>
+                                <img  class="img2" src="{{ url_for('static', filename='img/logo.png') }}" alt="">
+                                <h3>Pioneering Dermatological Disease Diagnosis.</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="welcome_clicnic_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_thumb">
+                        <div class="thumb_1">
+                            <img src="{{ url_for('static', filename='img/about/1.jpg') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="welcome_docmed_info">
+                        <h3>Welcome to
+                            <span>Skin-O-Vis.</span></h3>
+                        <p>We're delighted to have you here. Our mission is to make skin disease detection easy, reliable, and stress-free. We've designed Skin-O-Vis with your well-being in mind. Let's dive in, explore, and embark on a journey to healthier, happier skin together!</p>
+                        <ul>
+                            <li> <i class="flaticon-verified"></i> Precise and reliable skin disease detection. </li>
+                            <li> <i class="flaticon-verified"></i> Versatile multi-model disease detection. </li>
+                            <li> <i class="flaticon-verified"></i> Integrated language model for detailed insights.</li>
+                            <li> <i class="flaticon-verified"></i> An intuitive and easy-to-use interface. </li>
+                        </ul>
+                        <a href="{{ url_for('about') }}" class="boxed-btn6">About us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="depertment_area" id="dis">
+        <div class="container">
+            <div class="row custom_align align-items-end justify-content-between">
+                <div class="col-lg-6">
+                    <div class="section_title">
+                        <h3>Detectable Diseases</h3>
+                        <p>A Glimpse into Our Diagnostic Abilities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="depart_ment_tab mb-30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://www.mayoclinic.org/diseases-conditions/actinic-keratosis/symptoms-causes/syc-20354969" target="_blank">
+                                            <h4 class="text-white text-center">Actinic keratoses</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://www.mayoclinic.org/diseases-conditions/basal-cell-carcinoma/symptoms-causes/syc-20354187" target="_blank">
+                                            <h4 class="text-white text-center">Basal Cell Carcinoma</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://www.mayoclinic.org/diseases-conditions/seborrheic-keratosis/symptoms-causes/syc-20353878" target="_blank">
+                                            <h4 class="text-white text-center">Benign keratoses</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://emedicine.medscape.com/article/1056742-overview" target="_blank">
+                                            <h4 class="text-white text-center">Dermatofibroma</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 box-h"></div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://emedicine.medscape.com/article/1058445-overview" target="_blank">
+                                            <h4 class="text-white text-center">Melanocytic nevi</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://en.wikipedia.org/wiki/Vascular_tumor" target="_blank">
+                                            <h4 class="text-white text-center">Vascular lesions</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="https://www.mayoclinic.org/diseases-conditions/melanoma/symptoms-causes/syc-20374884" target="_blank">
+                                            <h4 class="text-white text-center">Melanoma</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="box-style">
+                                        <a href="javascript:void(0);" onclick="return false;">
+                                            <h4 class="text-white text-center">Normal skin</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="llm2"></div>
+
+
+    <div class="book_apointment_area" id="detection">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="popup_box">
+                        <div class="popup_inner">
+                            <h3>
+                                Dermatological Disease
+                            <span>Detection</span>
+                            </h3>
+                            <h4 style="color:black;">Empowering Health, One Click at a Time</h4>
+                            <br>
+                            <form action="/upload" id="upload-file"  method="post" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="col-xl-9">
+                                        <input type="text" name="name"  placeholder="Your name ">
+                                    </div>
+                                    <div class="col-xl-3">
+                                        <input type="text" name="age"  placeholder="Your age">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="text" name="phone"  placeholder="Phone number ">
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <input type="email" name="email"  placeholder="Email Address">
+                                    </div>
+                                    <div class="col-xl-12 form-group">
+                                        <select class="form-control" id="exampleFormControlSelect1" name="model">
+                                          <option>Custom CNN</option>
+                                          <option>YOLOv8</option>
+                                          <option>Majority Voting</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xl-12" class="custom-file">
+                                        <input type="file" name="files[]"  id="customFile" multiple>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <a href="https://youtu.be/V4VAc0rfeps" class="btn btn-primary" style="margin-bottom: 20px;">Watch Demo Video</a>
+                                    </div>
+                                    <div class="col-xl-12" id="submitButtonContainer">
+                                        <button type="submit" class="boxed-btn3" id="submitBtn" onclick="captureChoice()">Click to proceed</button>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="loading-spinner" id="loadingSpinner"></div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function(event) {
+            document.getElementById("submitButtonContainer").style.display = "none";
+            // Show the loading spinner
+            document.getElementById("loadingSpinner").style.display = "block";
+        });
+    </script>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-10" id="llm">
+                <div class="section_title mb-55 text-center" id="Lama" style="padding-top: 50px;">
+                    <h3>Skin-O-Vis KnowledgeHub</h3>
+                    <br>
+                    <p style="font-style: bold;">LLAMA2: Elevating Healthcare with AI Conversations</p>
+                </div>
+                <div style="padding-top: 10px; padding-bottom: 10px;">
+                    <input type="text" id="prompt-input" class="form-control" placeholder="Ask your question..." x-webkit-speech>
+                </div>
+                <div class="llm1"></div>
+                <div><button id="generate-button" class="btn btn-primary" onclick="generateText()">Generate Text</button></div>
+                <div id="response-output" style="color: white;"></div>
+                <div class="llm1"></div>
+                <button id="regenerate-button" class="btn btn-secondary" style="display:none;" onclick="regenerateText()">Ask Next Question</button>
+            </div>
+        </div>
+    </div>
+    <div class="llm1"></div>
+    <div class="llm1"></div>
+    <div class="llm1"></div>
+    <div class="llm1"></div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function setLoadingState() {
+            $("#response-output").html("Generating Response...");
+            $("#generate-button").hide();
+            $("#regenerate-button").hide();
+        }
+
+        function generateText() {
+            setLoadingState();
+
+            const promptInput = $("#prompt-input").val();
+            $.ajax({
+                type: "POST",
+                url: "/get_response",
+                data: { prompt_input: promptInput },
+                success: function (data) {
+                    $("#response-output").html(data.response);
+                    $("#generate-button").hide();
+                    $("#regenerate-button").show();
+                },
+            });
+        }
+
+        function regenerateText() {
+            setLoadingState();
+
+            $("#prompt-input").val(""); // Clear the input field
+            $("#response-output").empty(); // Clear the response output
+            $("#generate-button").show();
+            $("#regenerate-button").hide();
+        }
+    </script>
+
+
+    <div class="disclaimer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    <p style="color: #FF6969; font-size: 12px;">Disclaimer: This website provides information for educational and informational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Consult with a qualified healthcare provider for any medical concerns.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="row">
+                    <div class="bordered_1px "></div>
+                    <div class="col-xl-12 justify-content-center">
+                        <p class="copy_right text-center">
+                            <p style="color: white;">Committed to your wellbeing, with ❤️ Team Elixir</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elementsToAnimate = document.querySelectorAll('.animated-element');
+
+            elementsToAnimate.forEach(function (element, index) {
+                setTimeout(function () {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, 500 * (index + 1));
+            });
+        });
+    </script>
+
+
+
+    <script>
+        function getAnswer() {
+            const questionInput = document.getElementById("question-input").value;
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Replace this with actual code to fetch the answer from your language model.
+            // For simplicity, we'll just echo back the question as the answer in this example.
+            answerOutput.innerHTML = "Answer: " + questionInput;
+
+            // Hide the "Get Answer" button and show the "Regenerate" button
+            getAnswerButton.style.display = "none";
+            regenerateButton.style.display = "inline";
+        }
+
+        function regenerateQuestion() {
+            const questionInput = document.getElementById("question-input");
+            const answerOutput = document.getElementById("answer-output");
+            const getAnswerButton = document.getElementById("get-answer-button");
+            const regenerateButton = document.getElementById("regenerate-button");
+
+            // Clear the input field and answer output
+            questionInput.value = "";
+            answerOutput.innerHTML = "";
+
+            // Hide the "Regenerate" button and show the "Get Answer" button
+            regenerateButton.style.display = "none";
+            getAnswerButton.style.display = "inline";
+        }
+    </script>
+
+
+
+
+    <script src="{ url_for('static', filename='js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/popper.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{ url_for('static', filename='s/isotope.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/ajax-form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/waypoints.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.counterup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/imagesloaded.pkgd.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/scrollIt.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.scrollUp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/wow.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/nice-select.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.slicknav.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/plugins.js') }}"></script>
+    <script src="{ url_for('static', filename='js/gijgo.min.js') }}"></script>
+    <!--contact js-->
+    <script src="{ url_for('static', filename='js/contact.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.form.js') }}"></script>
+    <script src="{ url_for('static', filename='js/jquery.validate.min.js') }}"></script>
+    <script src="{ url_for('static', filename='js/mail-script.js') }}"></script>
+    <script src="{ url_for('static', filename='js/main.js') }}"></script>
+
+    <script>
+    // JavaScript function to capture the selected choice and submit the form
+    function captureChoice() {
+        var selectedChoice = document.getElementById("choices").value;
+        document.getElementById("selected_choice").value = selectedChoice;
+        document.getElementById("upload-file").submit();
+    }
+    </script>
+
+
+    <script>
+        $('.datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-calendar"></span>'
+            }
+        });
+
+        $('.timepicker').timepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+                rightIcon: '<span class="fa fa-clock-o"></span>'
+            }
+        });
+    $(document).ready(function() {
+    $('.js-example-basic-multiple').select2();
+});
+    </script>
+    <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load",function(){loader.style.display = "none"})
+    </script>
+</body>
+
+</html>
